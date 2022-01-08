@@ -30,7 +30,7 @@ rm -f $CACHE_DIR/error_log.txt
 # Buildpack URL
 ARCHIVE_NAME=geckodriver
 FILE_NAME=${ARCHIVE_NAME}-${VERSION}.tar.gz
-BUILDPACK_GECKODRIVER_PACKAGE="https://github.com/mozilla/geckodriver/releases/download/v$VERSION/geckodriver-v$VERSION-$PLATFORM.tar.gz"
+BUILDPACK_GECKODRIVER_PACKAGE="https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz"
 
 if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
     echo "-----> Fetching geckodriver package from ${BUILDPACK_GECKODRIVER_PACKAGE}"
